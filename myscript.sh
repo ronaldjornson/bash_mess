@@ -4,7 +4,7 @@
 
 #############################
 
-word=awesome
+word=fun
 
 echo "Linux is $word"
 echo "Videogames are $word"
