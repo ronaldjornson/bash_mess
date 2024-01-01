@@ -4,10 +4,11 @@
 
 #############################
 
-echo "Linux is awesome"
-echo "Videogames are awesome"
-echo "Sunny days are awesome"
+word=awesome
 
+echo "Linux is $word"
+echo "Videogames are $word"
+echo "Sunny days are $word"
 
 
 #############################
