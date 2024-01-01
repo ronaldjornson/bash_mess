@@ -1,4 +1,9 @@
 # bash_mess
+
+## A Project for my own use to exercise bash-scripting on github
+
+
+
 At long last messing around with bash scripting and github
 
 Not to be taken too serious. This is just to get the hang of workflows.
