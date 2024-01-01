@@ -4,14 +4,29 @@
 
 #############################
 
-now=$(date)
-word=fun
+name="Ronald Jørnsøn"
 
-echo "Linux is $word"
-echo "Videogames are $word"
-echo "Sunny days are $word"
-echo "The system date and time now is:"
+now=$(date)
+
+echo "Hello $name"
+
+echo "The system date and time is:"
+
 echo $now
+
+echo "Your username is: $USER"
+
+
+#############################
+
+#now=$(date)
+#word=fun
+
+#echo "Linux is $word"
+#echo "Videogames are $word"
+#echo "Sunny days are $word"
+#echo "The system date and time now is:"
+#echo $now
 
 ##############################
 
