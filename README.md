@@ -12,7 +12,7 @@ This is Not to be taken too seriously. This is just trying to get the hang of th
 
 ## Users:
 
-  I can't think of any way this project could be useful for anyony other than myself but this is a work in progress. Time will tell.
+  I can't think of any way this project could be useful for anyone other than me but this is a work in progress. Time will tell.
 
 ## Credits:
 
