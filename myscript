@@ -5,7 +5,7 @@
 #############################
 
 
-mynum=210
+mynum=250
 
 if [ $mynum -ne 200 ] ; then
   echo "The condition is true." ; else
