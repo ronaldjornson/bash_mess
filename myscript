@@ -7,7 +7,7 @@
 
 mynum=200
 
-if [ $mynum -eq 200 ] ; then
+if [ $mynum -ne 200 ] ; then
   echo "The condition is true." ; else
   echo "The condition is false."
 fi
