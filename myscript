@@ -1,20 +1,31 @@
 #!/bin/bash
-
+#
 #fooling around with bash
 
 #############################
 
-name="Ronald Jørnsøn"
 
-now=$(date)
+mynum=200
 
-echo "Hello $name"
+if [ $mynum -eq 200 ] ; then
+  echo "The condition is true." ; else
+  echo "The condition is false."
+fi
 
-echo "The system date and time is:"
 
-echo $now
+#############################
 
-echo "Your username is: $USER"
+#name="Ronald Jørnsøn"
+
+#now=$(date)
+
+#echo "Hello $name"
+
+#echo "The system date and time is:"
+
+#echo $now
+
+#echo "Your username is: $USER"
 
 
 #############################
