@@ -4,14 +4,19 @@
 
 #############################
 
-
-mynum=200
-
-if [ $mynum -ne 200 ] ; then
-  echo "The condition is true." ; else
-  echo "The condition is false."
+if [ -f ~/TEST ] ; then
+  echo "The file exists" ; else
+  echo "The file does not exist!"
 fi
 
+#############################
+
+#mynum=200
+
+#if [ $mynum -ne 200 ] ; then
+#  echo "The condition is true." ; else
+#  echo "The condition is false."
+#fi
 
 #############################
 
@@ -26,7 +31,6 @@ fi
 #echo $now
 
 #echo "Your username is: $USER"
-
 
 #############################
 
@@ -47,10 +51,8 @@ fi
 #echo "Hello, my name is $myname."
 #echo "I am $myage years old."
 
-
 #############################
 
 #echo "Hello world!"
-
 
 #############################
