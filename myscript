@@ -12,6 +12,10 @@ if [ -f $command ] ; then
   sudo apt update && sudo apt install htop
 fi
 
+sleep 5
+
+$command
+
 #############################
 
 #if [ -f ~/TEST ] ; then
