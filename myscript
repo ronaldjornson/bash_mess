@@ -12,7 +12,7 @@ if [ -f $command ] ; then
   sudo apt update && sudo apt install htop
 fi
 
-sleep 5
+sleep 3
 
 $command
 
