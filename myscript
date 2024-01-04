@@ -4,9 +4,19 @@
 
 #############################
 
-if [ -f ~/TEST ] ; then
-  echo "The file exists" ; else
-  echo "The file does not exist!"
+command=/usr/bin/htop
+
+if [ -f $command ] ; then
+  echo "$command is available, let's run it!" ; else
+  echo "$command is not available. Installing it!"
+  sudo apt update && sudo apt install htop
+fi
+
+#############################
+
+#if [ -f ~/TEST ] ; then
+#  echo "The file exists" ; else
+#  echo "The file does not exist!"
 
 #############################
 
