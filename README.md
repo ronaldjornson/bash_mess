@@ -24,3 +24,6 @@
 ## License:
 
   Copyright (C) 2023-2024 Ronald Jørnsøn
+  45grn6meov@runbox.email
+
+  // SPDX-License-Identifier: GPL-3.0-or-later
