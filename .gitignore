@@ -3,7 +3,8 @@
 #MISC
 *.un~
 *.swp
-
+.gitignore~
+myscript~
 
 #LOGS:
 *.log
