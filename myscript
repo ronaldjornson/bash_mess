@@ -9,8 +9,8 @@ package=htop
 
 sudo apt install $package
 
-if [ $? -e 0 ] ; then
-  echo "The instalation of $package was succesful."
+if [ $? -eq 0 ] ; then
+  echo "The installation of $package was succesful."
   echo "$package is available here:"
   which $package ; else
   echo "$package failed to install."
