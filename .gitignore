@@ -1,10 +1,6 @@
-## .gitignore file
-
-#MISC
 *.un~
 *.swp
 .gitignore~
 myscript~
-
-#LOGS:
+README.md~
 *.log

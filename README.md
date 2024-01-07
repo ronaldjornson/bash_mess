@@ -21,6 +21,6 @@
 
   I am working throug Jay LaCroix's Youtube bash tutorial. Every script originates from his material. Contact me if the way I am doing things copyright-wise rubs you the wrong way. I mean to offend noone. Jay, thanks a bunch for all the good work you do.
 
-## Copyright:
+## License:
 
-  These scripts are Copyright (c) 2023-2024 by ronaldjornson
+  Copyright (C) 2023-2024 Ronald Jørnsøn
