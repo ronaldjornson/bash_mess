@@ -2,19 +2,24 @@
 #
 #fooling around with bash
 
+
 #############################
 
-command=htop
 
-if command -v $command ; then
-  echo "$command is available, let's run it!" ; else
-  echo "$command is not available. Installing it!"
-  sudo apt update && sudo apt install htop
-fi
 
-sleep 2
+#############################
 
-$command
+#command=htop
+
+#if command -v $command ; then
+#  echo "$command is available, let's run it!" ; else
+#  echo "$command is not available. Installing it!"
+#  sudo apt update && sudo apt install htop
+#fi
+
+#sleep 2
+
+#$command
 
 
 #############################
