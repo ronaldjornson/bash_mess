@@ -11,15 +11,13 @@
 
 #############################
 
-myvar=1
-
 while [ -f ~/testfile ]
   do
-    echo "The testfile exists."
-    sleep 1
+    echo "As of $(date), the testfile exists."
+    sleep 0.3
 done
 
-echo "The testfile does no longer exist. Exiting!"
+echo "As of $(date), the testfile does no longer exist. Exiting!"
 
 exit
 
@@ -79,54 +77,54 @@ $command
 
 #############################
 
-#if [ -f ~/TEST ] ; then
-#  echo "The file exists" ; else
-#  echo "The file does not exist!"
+if [ -f ~/TEST ] ; then
+  echo "The file exists" ; else
+  echo "The file does not exist!"
 
 #############################
 
-#mynum=210
+mynum=210
 
-#if [ $mynum -ne 200 ] ; then
-#  echo "The condition is true." ; else
-#  echo "The condition is false."
-#fi
-
-#############################
-
-#name="Ronald Jørnsøn"
-
-#now=$(date)
-
-#echo "Hello $name"
-
-#echo "The system date and time is:"
-
-#echo $now
-
-#echo "Your username is: $USER"
+if [ $mynum -ne 200 ] ; then
+  echo "The condition is true." ; else
+  echo "The condition is false."
+fi
 
 #############################
 
-#now=$(date)
-#word=fun
+name="Ronald Jørnsøn"
 
-#echo "Linux is $word"
-#echo "Videogames are $word"
-#echo "Sunny days are $word"
-#echo "The system date and time now is:"
-#echo $now
+now=$(date)
+
+echo "Hello $name"
+
+echo "The system date and time is:"
+
+echo $now
+
+echo "Your username is: $USER"
+
+#############################
+
+now=$(date)
+word=fun
+
+echo "Linux is $word"
+echo "Videogames are $word"
+echo "Sunny days are $word"
+echo "The system date and time now is:"
+echo $now
 
 ##############################
 
-#myname=Ronald
-#myage=46
+myname=Ronald
+myage=46
 
-#echo "Hello, my name is $myname."
-#echo "I am $myage years old."
+echo "Hello, my name is $myname."
+echo "I am $myage years old."
 
 #############################
 
-#echo "Hello world!"
+echo "Hello world!"
 
 #############################
