@@ -20,49 +20,48 @@ do
   sleep 0.5
 done
 
+exit
 
 #############################
 
-#package=htop
+package=htop
 
-#sudo apt-get install $package >> package_install_results.log
+sudo apt-get install $package >> package_install_results.log
 
-#if [ $? -eq 0 ] ; then
-#  echo "The installation of $package was succesful."
-#  echo "$package is available here:"
-#  which $package ; else
-#  echo "$package failed to install." >> package_install_failure.log
-#fi
-
-
-#############################
-
-#command=htop
-
-#if command -v $command ; then
-#  echo "$command is available, let's run it!" ; else
-#  echo "$command is not available. Installing it!"
-#  sudo apt update && sudo apt install htop
-#fi
-
-#sleep 2
-
-#$command
-
+if [ $? -eq 0 ] ; then
+  echo "The installation of $package was succesful."
+  echo "$package is available here:"
+  which $package ; else
+  echo "$package failed to install." >> package_install_failure.log
+fi
 
 #############################
 
-#command=/usr/bin/htop
+command=htop
 
-#if [ -f $command ] ; then
-#  echo "$command is available, let's run it!" ; else
-#  echo "$command is not available. Installing it!"
-#  sudo apt update && sudo apt install htop
-#fi
+if command -v $command ; then
+  echo "$command is available, let's run it!" ; else
+  echo "$command is not available. Installing it!"
+  sudo apt update && sudo apt install htop
+fi
 
-#sleep 3
+sleep 2
 
-#$command
+$command
+
+#############################
+
+command=/usr/bin/htop
+
+if [ -f $command ] ; then
+  echo "$command is available, let's run it!" ; else
+  echo "$command is not available. Installing it!"
+  sudo apt update && sudo apt install htop
+fi
+
+sleep 3
+
+$command
 
 #############################
 
