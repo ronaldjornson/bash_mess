@@ -11,10 +11,21 @@
 
 #----------------------------
 
+package=htop
+
+sudo apt-get install $package >> package_install_results.log
+
+[ $? -eq 0 ] && echo "The installation of $package was succesful." \
+|| echo "$package failed to install." >> package_install_failure.log \
+&& echo "$package is available here:" \
+&& which $package \
+
+exit
+#----------------------------
+
 [ -f ~/TEST ] && echo "The file exists" || echo "The file does not exist!";
 
 exit
-
 #----------------------------
 
 for file in logfiles/*.log
@@ -23,7 +34,6 @@ do
 done
 
 exit
-
 #----------------------------
 
 for number in {1..10}
@@ -48,7 +58,7 @@ echo "As of $(date), the testfile does no longer exist. Exiting!"
 
 exit
 
-#############################
+#----------------------------
 
 myvar=1
 
@@ -61,7 +71,7 @@ done
 
 exit
 
-#############################
+#----------------------------
 
 package=htop
 
