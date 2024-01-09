@@ -11,6 +11,12 @@
 
 #----------------------------
 
+[ -f ~/TEST ] && echo "The file exists" || echo "The file does not exist!";
+
+exit
+
+#----------------------------
+
 for file in logfiles/*.log
 do
   tar -czvf $file.tar.gz $file
@@ -96,7 +102,7 @@ sleep 3
 
 $command
 
-#############################
+#----------------------------
 
 if [ -f ~/TEST ] ; then
   echo "The file exists" ; else
