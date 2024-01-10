@@ -11,6 +11,13 @@
 
 #----------------------------
 
+echo "Please enter your name:"
+read myname
+echo "Your name is: $myname"
+
+exit
+#----------------------------
+
 package=htop
 
 sudo apt-get install $package >> package_install_results.log
