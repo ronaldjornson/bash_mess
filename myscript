@@ -11,26 +11,36 @@
 
 #----------------------------
 
-echo "What is your favorite distribution?"
+finished=0
 
-echo "1 - Arch Linux"
-echo "2 - CentOS"
-echo "3 - Debian"
-echo "4 - Linux Mint"
-echo "5 - Ubuntu"
-echo "6 - something else..."
+while [ $finished -ne 1 ]
+  do
 
-read distro;
+    echo "What is your favorite distribution?"
 
-case $distro in 
-  1) echo "Arch is a rolling release.";;
-  2) echo "CentOS is popular on servers.";;
-  3) echo "Debian is the universal operating system.";;
-  4) echo "Mint is popular on laptops and desktops.";;
-  5) echo "Ubuntu is popular on both pc and servers.";;
-  6) echo "There are many fine linux distributions out there!";;
-  *) echo "You didn't enter an appropriate choice."
-esac
+    echo "1 - Arch Linux"
+    echo "2 - CentOS"
+    echo "3 - Debian"
+    echo "4 - Linux Mint"
+    echo "5 - Ubuntu"
+    echo "6 - something else..."
+    echo "7 - exit the script."
+
+    read distro;
+
+    case $distro in 
+      1) echo "Arch is a rolling release.";;
+      2) echo "CentOS is popular on servers.";;
+      3) echo "Debian is the universal operating system.";;
+      4) echo "Mint is popular on laptops and desktops.";;
+      5) echo "Ubuntu is popular on both pc and servers.";;
+      6) echo "There are many fine linux distributions out there!";;
+      7) finished=1 ;;
+      *) echo "You didn't enter an appropriate choice."
+    esac
+    echo ""
+  done
+  echo "Thank you for using this script. ;-)"
 
 exit
 #---------------------------
