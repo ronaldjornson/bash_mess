@@ -11,6 +11,28 @@
 
 #----------------------------
 
+echo "What is your favorite distribution?"
+
+echo "1 - Arch Linux"
+echo "2 - CentOS"
+echo "3 - Debian"
+echo "4 - Linux Mint"
+echo "5 - Ubuntu"
+echo "6 - something else..."
+
+read distro;
+
+case $distro in 
+  1) echo "Arch is a rolling release.";;
+  2) echo "CentOS is popular on servers.";;
+  3) echo "Debian is the universal operating system.";;
+  4) echo "Mint is popular on laptops and desktops.";;
+  5) echo "Ubuntu is popular on both pc and servers.";;
+  6) echo "There are many fine linux distributions out there!";;
+  *) echo "You didn't enter an appropriate choice."
+esac
+
+exit
 #---------------------------
 
 echo "Please enter your name:"
