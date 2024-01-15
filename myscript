@@ -1,9 +1,165 @@
 #!/bin/bash
-#
-#fooling around with bash
+
+# fooling around with bash
+
+# Copyright (C) 2023-2024 Ronald Jørnsøn
+# 45grn6meov@runbox.email
+
+# SPDX-License-Identifier: GPL-3.0-or-later
+ 
+# https://www.gnu.org/licenses/gpl-3.0-standalone.html
+
+#----------------------------
+
+finished=0
+
+while [ $finished -ne 1 ]
+  do
+
+    echo "What is your favorite distribution?"
+
+    echo "1 - Arch Linux"
+    echo "2 - CentOS"
+    echo "3 - Debian"
+    echo "4 - Linux Mint"
+    echo "5 - Ubuntu"
+    echo "6 - something else..."
+    echo "7 - exit the script."
+
+    read distro;
+
+    case $distro in 
+      1) echo "Arch is a rolling release.";;
+      2) echo "CentOS is popular on servers.";;
+      3) echo "Debian is the universal operating system.";;
+      4) echo "Mint is popular on laptops and desktops.";;
+      5) echo "Ubuntu is popular on both pc and servers.";;
+      6) echo "There are many fine linux distributions out there!";;
+      7) finished=1 ;;
+      *) echo "You didn't enter an appropriate choice."
+    esac
+    echo ""
+  done
+  echo "Thank you for using this script. ;-)"
+
+exit
+#---------------------------
+
+echo "Please enter your name:"
+read myname
+echo "Your name is: $myname"
+
+exit
+#----------------------------
+
+package=htop
+
+sudo apt-get install $package >> package_install_results.log
+
+[ $? -eq 0 ] && echo "The installation of $package was succesful." \
+|| echo "$package failed to install." >> package_install_failure.log \
+&& echo "$package is available here:" \
+&& which $package \
+
+exit
+#----------------------------
+
+[ -f ~/TEST ] && echo "The file exists" || echo "The file does not exist!";
+
+exit
+#----------------------------
+
+for file in logfiles/*.log
+do
+  tar -czvf $file.tar.gz $file
+done
+
+exit
+#----------------------------
+
+for number in {1..10}
+  do
+    echo $number
+    sleep 0.45
+done
+
+echo "This is outside of the loop."
+
+exit
+
+#----------------------------
+
+while [ -f ~/testfile ]
+  do
+    echo "As of $(date), the testfile exists."
+    sleep 0.3
+done
+
+echo "As of $(date), the testfile does no longer exist. Exiting!"
+
+exit
+
+#----------------------------
+
+myvar=1
+
+while [ $myvar -le 10 ]
+do
+  echo $myvar
+  myvar=$(( $myvar + 1 ))
+  sleep 0.5
+done
+
+exit
+
+#----------------------------
+
+package=htop
+
+sudo apt-get install $package >> package_install_results.log
+
+if [ $? -eq 0 ] ; then
+  echo "The installation of $package was succesful."
+  echo "$package is available here:"
+  which $package ; else
+  echo "$package failed to install." >> package_install_failure.log
+fi
 
 #############################
 
+command=htop
+
+if command -v $command ; then
+  echo "$command is available, let's run it!" ; else
+  echo "$command is not available. Installing it!"
+  sudo apt update && sudo apt install htop
+fi
+
+sleep 2
+
+$command
+
+#############################
+
+command=/usr/bin/htop
+
+if [ -f $command ] ; then
+  echo "$command is available, let's run it!" ; else
+  echo "$command is not available. Installing it!"
+  sudo apt update && sudo apt install htop
+fi
+
+sleep 3
+
+$command
+
+#----------------------------
+
+if [ -f ~/TEST ] ; then
+  echo "The file exists" ; else
+  echo "The file does not exist!"
+
+#############################
 
 mynum=250
 
@@ -12,45 +168,41 @@ if [ $mynum -ne 200 ] ; then
   echo "The condition is false."
 fi
 
+#############################
+
+name="Ronald Jørnsøn"
+
+now=$(date)
+
+echo "Hello $name"
+
+echo "The system date and time is:"
+
+echo $now
+
+echo "Your username is: $USER"
 
 #############################
 
-#name="Ronald Jørnsøn"
+now=$(date)
+word=fun
 
-#now=$(date)
-
-#echo "Hello $name"
-
-#echo "The system date and time is:"
-
-#echo $now
-
-#echo "Your username is: $USER"
-
-
-#############################
-
-#now=$(date)
-#word=fun
-
-#echo "Linux is $word"
-#echo "Videogames are $word"
-#echo "Sunny days are $word"
-#echo "The system date and time now is:"
-#echo $now
+echo "Linux is $word"
+echo "Videogames are $word"
+echo "Sunny days are $word"
+echo "The system date and time now is:"
+echo $now
 
 ##############################
 
-#myname=Ronald
-#myage=46
+myname=Ronald
+myage=46
 
-#echo "Hello, my name is $myname."
-#echo "I am $myage years old."
-
+echo "Hello, my name is $myname."
+echo "I am $myage years old."
 
 #############################
 
-#echo "Hello world!"
-
+echo "Hello world!"
 
 #############################

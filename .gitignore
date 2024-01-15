@@ -1,0 +1,6 @@
+*.un~
+*.swp
+.gitignore~
+myscript~
+README.md~
+*.log
